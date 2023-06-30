@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon (1).ico">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html,
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #wrapper {
+        text-align: center;
+        display: block;
+        padding-left: 34px; 
+        padding-top: 34px; 
+    }
+    #menu_bar{
+       position: relative;
+       width:100%;
+    }
+
+    #menu_bar_hamburger{
+        cursor: pointer;
+        border:none;
+        width: 44px;
+        height: 44px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        background-color: transparent; 
+        position: absolute;
+        left: 0;
+    }
+    #menu_bar_hamburger::after {
+        width: 26px;
+        height: 26px;
+        background-image: url(sp_name.png);
+        content: "";
+        display: block;
+        border:none;
+        background-size: 422px 405px;
+        background-position: -335px -284px;
+        background-repeat: no-repeat;
+    }
+    
+    #menu_bar_hamburger:hover{
+        background-color:#e3e5e8;
+        border:none;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+   #menu_bar_naver_pay{
+        content: "";
+        display: block;
+        background-image: url(sp_name.png);
+        background-size: 422px 405px;
+        background-position: -31px -316px;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 26px;
+        position: absolute;
+        border: none;
+        right:0;
+        
+    }
+    #menu_bar_naver_pay:hover{
+        background-color:#e3e5e8;
+        border:none;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+   #menu_bar_notice {
+        content: "";
+        display: block;
+        background-image: url(sp_name.png);
+        background-size: 422px 405px;
+        background-position: -364px -27px;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        position: relative;
+   }
+    </style>
+<body>
+    <div id="wrapper" >
+        <div id="menu_bar">
+            <button type = text id="menu_bar_hamburger">
+            </button>
+            <button type = text id="menu_bar_naver_pay">
+            </button>
+            <button type = text id="menu_bar_notice">
+            </button>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>
