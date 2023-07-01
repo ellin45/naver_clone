@@ -20,6 +20,7 @@
         display: block;
         padding-left: 34px; 
         padding-top: 34px; 
+        padding-right: 34px;
     }
     #menu_bar{
        position: relative;
@@ -56,13 +57,26 @@
         border-radius: 50%;
         cursor:pointer;
     }
-   #menu_bar_naver_pay{
+    #menu_bar_naver_pay{
+        cursor: pointer;
+        border:none;
+        width: 44px;
+        height: 44px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        background-color: transparent; 
+        position: absolute;
+        right: 0;
+    }
+   #menu_bar_naver_pay::after{
         content: "";
         display: block;
         background-image: url(sp_name.png);
         background-size: 422px 405px;
         background-position: -31px -316px;
         background-repeat: no-repeat;
+        background-color: transparent; 
         width: 30px;
         height: 26px;
         position: absolute;
@@ -86,6 +100,7 @@
         width: 26px;
         height: 26px;
         position: relative;
+        right:0;
    }
     </style>
 <body>
